@@ -1,0 +1,10 @@
+{
+  "name": "Flightradar24",
+  "tweaks": [
+    {
+      "id": "remove-ad-sidebar",
+      "title": "Remove Ad Sidebar",
+      "description": "Removes the right sidebar containing ads"
+    }
+  ]
+}

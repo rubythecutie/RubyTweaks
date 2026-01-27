@@ -1,0 +1,10 @@
+{
+  "name": "Discord",
+  "tweaks": [
+    {
+      "id": "toggle-server-list",
+      "title": "Toggle server list",
+      "description": "Adds a button to toggle servers"
+    }
+  ]
+}

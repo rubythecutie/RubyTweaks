@@ -1,0 +1,11 @@
+{
+  "discord": {
+    "domain": "discord.com",
+    "meta": "sites/discord/meta.json",
+    "badgeColor": "#5865F2"
+  },
+  "flightradar24": {
+    "domain": "flightradar24.com",
+    "meta": "sites/flightradar24/meta.json"
+  }
+}

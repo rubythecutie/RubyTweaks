@@ -1,0 +1,35 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #111;
+  color: #eee;
+  width: 260px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+li {
+  background: #1c1c1c;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+strong {
+  display: block;
+  font-size: 13px;
+}
+
+.desc {
+  font-size: 11px;
+  opacity: 0.7;
+}
+

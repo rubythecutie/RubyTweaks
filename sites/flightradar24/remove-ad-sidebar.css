@@ -1,0 +1,7 @@
+aside.flex.h-full.w-sidebar {
+  display: none;
+}
+
+.right-sidebar {
+  right: 0;
+}
