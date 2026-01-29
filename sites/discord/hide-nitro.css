@@ -1,0 +1,23 @@
+/* Top banners */
+div.notice__29487.theme-dark.theme-darker.images-dark,
+
+/* "So many hours left" badges */
+div.premiumBadge__6d7da.premiumAcknowledgedBadge__6d7da,
+div.premiumTrialBadge__4c1e4.premiumOfferWithTimerAcknowledgedBadge__4c1e4,
+
+/* Appearance Nitro Advertising */
+div.upsellContainer__0b69f.upsellContainerFloating__0b69f.floatingNitroUpsell__39749,
+div.colorThemesBackground_fbfab6,
+div.selectionGroup__6b52d,
+div.container_a1d343,
+
+/* Nitro button in DMs list */
+div[aria-setsize="49"][aria-posinset="2"], 
+
+/* Gift Nitro in DMs */
+div.button__74017.button__24af7,
+
+/* Nitro badge in profiles */
+a[href="https://discord.com/settings/premium"] {
+  display: none;
+}

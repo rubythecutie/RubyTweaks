@@ -7,5 +7,10 @@
   "flightradar24": {
     "domain": "flightradar24.com",
     "meta": "sites/flightradar24/meta.json"
+  },
+  "spotify": {
+    "domain": "spotify.com",
+    "meta": "sites/spotify/meta.json",
+    "badgeColor": "#1DB954"
   }
 }

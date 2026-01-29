@@ -1,0 +1,11 @@
+{
+  "name": "Spotify",
+  "tweaks": [
+    {
+      "id": "no-premium-ads",
+      "title": "No Premium Ads",
+      "description": "Removes advertising for Spotify Premium",
+      "css": "sites/spotify/no-premium-ads.css"
+    }
+  ]
+}

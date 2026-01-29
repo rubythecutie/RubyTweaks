@@ -11,7 +11,8 @@
   ],
   "host_permissions": [
     "*://*.discord.com/*",
-    "*://*.flightradar24.com/*"
+    "*://*.flightradar24.com/*",
+    "*://*.spotify.com/*"
   ],
   "background": {
     "scripts": ["background.js"]

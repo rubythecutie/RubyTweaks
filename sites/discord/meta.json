@@ -6,6 +6,18 @@
       "title": "Toggle server list",
       "description": "Adds a button to toggle servers",
       "js": "sites/discord/toggle-server-list.js"
+    },
+    {
+      "id": "hide-nitro",
+      "title": "Hide Nitro",
+      "description": "Removes mentions and advertising about Nitro",
+      "css": "sites/discord/hide-nitro.css"
+    },
+    {
+      "id": "no-custom-fonts",
+      "title": "No Custom Fonts",
+      "description": "Forces custom username fonts back to Discord's default",
+      "css": "sites/discord/no-custom-fonts.css"
     }
   ]
 }

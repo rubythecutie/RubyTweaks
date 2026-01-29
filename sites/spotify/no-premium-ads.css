@@ -1,0 +1,13 @@
+/* Large "Upgrade" button */
+div.fzVcKb,
+/* Padding */
+div.fnzolD p.e-10120-text,
+/* Upgrade button */
+div.gfqYmc:has(a),
+
+/* Navbar button */
+button[aria-label="Upgrade to Premium"],
+/* Account menu */
+li:has(a[href="https://www.spotify.com/premium/?ref=web_loggedin_upgrade_menu"]) {
+  display: none;
+}
