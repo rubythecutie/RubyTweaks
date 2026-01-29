@@ -1,11 +1,31 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="popup.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RubyTweaks</title>
+  <link rel="stylesheet" href="popup.css" />
 </head>
 <body>
-  <h1>Active Tweaks</h1>
-  <ul id="tweaks"></ul>
+  <div class="header">
+    <div class="header-row">
+      <div class="title-block">
+        <div class="title">Site Tweaks</div>
+      </div>
+
+      <button id="reloadBtn" class="reload hidden" title="Reload tab">⟳</button>
+    </div>
+  </div>
+
+  <div id="content">
+    <div id="no-tweaks" class="muted">Looking for tweaks…</div>
+    <div id="siteHeader" class="site-header hidden">
+      <div id="siteName" class="site-name"></div>
+      <div id="siteDomain" class="site-domain"></div>
+    </div>
+    <ul id="tweaks" role="list"></ul>
+  </div>
+
   <script src="popup.js"></script>
 </body>
 </html>

@@ -4,7 +4,8 @@
     {
       "id": "remove-ad-sidebar",
       "title": "Remove Ad Sidebar",
-      "description": "Removes the right sidebar containing ads"
+      "description": "Removes the right sidebar containing ads",
+      "css": "sites/flightradar24/remove-ad-sidebar.css"
     }
   ]
 }

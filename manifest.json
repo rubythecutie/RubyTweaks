@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
   "name": "RubyTweaks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ruby's cute tweaks to make things better :3",
   "icons": {
     "48": "icons/icon.png"
   },
   "permissions": [
-    "tabs"
+    "tabs", "storage", "activeTab", "scripting"
   ],
   "host_permissions": [
     "*://*.discord.com/*",
@@ -18,15 +18,5 @@
   },
   "action": {
     "default_popup": "popup/popup.html"
-  },
-  "content_scripts": [
-    {
-      "matches": ["*://*.discord.com/*"],
-      "js": ["sites/discord/toggle-server-list.js"]
-    },
-    {
-      "matches": ["*://*.flightradar24.com/*"],
-      "css": ["sites/flightradar24/remove-ad-sidebar.css"]
-    }
-  ]
+  }
 }
