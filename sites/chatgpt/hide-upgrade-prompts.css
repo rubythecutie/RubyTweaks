@@ -1,0 +1,16 @@
+/* "You've hit the free plan limit" */
+div.flex.w-full.shrink-0.flex-col button,
+
+/* Upgrade beside profile */
+button.__menu-item-trailing-btn.-ms-2.cursor-default.ps-2,
+
+/* Upgrade in user menu */
+div.bg-token-border-default + div:not([data-has-submenu]),
+
+/* Upgrade in model list */
+div[role="menu"][data-state="open"]:not(:has(div.flex-col)) div.group.__menu-item:first-of-type,
+
+/* Upgrade button above user icon */
+div.pointer-events-none.flex-grow + div {
+  display: none;
+}

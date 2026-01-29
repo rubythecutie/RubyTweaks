@@ -12,5 +12,9 @@
     "domain": "spotify.com",
     "meta": "sites/spotify/meta.json",
     "badgeColor": "#1DB954"
+  },
+  "chatgpt": {
+    "domain": "chatgpt.com",
+    "meta": "sites/chatgpt/meta.json"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "name": "ChatGPT",
+  "tweaks": [
+    {
+      "id": "hide-upgrade-prompts",
+      "title": "Hide Upgrade Prompts",
+      "description": "Removes buttons prompting plan upgrading",
+      "css": "sites/chatgpt/hide-upgrade-prompts.css"
+    }
+  ]
+}

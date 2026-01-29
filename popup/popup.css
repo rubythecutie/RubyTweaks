@@ -118,6 +118,9 @@ ul { list-style:none; margin:0; padding:0; }
   display:inline-block;
   flex-shrink:0;
 }
+.switch:hover {
+  cursor:pointer;
+}
 .switch input {
   opacity:0;
   width:0;

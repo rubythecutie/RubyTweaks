@@ -12,7 +12,8 @@
   "host_permissions": [
     "*://*.discord.com/*",
     "*://*.flightradar24.com/*",
-    "*://*.spotify.com/*"
+    "*://*.spotify.com/*",
+    "*://*.chatgpt.com/*"
   ],
   "background": {
     "scripts": ["background.js"]
