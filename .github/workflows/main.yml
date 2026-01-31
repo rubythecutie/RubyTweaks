@@ -1,0 +1,37 @@
+name: Build XPI
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build XPI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install web-ext
+        run: npm install --global web-ext
+
+      - name: Sign XPI via Mozilla AMO
+        env:
+          JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
+          JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+        run: |
+          web-ext sign --api-key=$JWT_ISSUER --api-secret=$JWT_SECRET --artifacts-dir=dist --channel=unlisted --amo-metadata=metadata.json
+
+      - name: Upload XPI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RubyTweaks-XPI
+          path: dist/*
