@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "RubyTweaks",
   "author": "rubythecutie",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ruby's cute tweaks to make things better :3",
   "icons": {
     "48": "icons/icon.png"
