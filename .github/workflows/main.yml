@@ -25,7 +25,7 @@ jobs:
           JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
           JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
         run: |
-          web-ext sign --api-key=$JWT_ISSUER --api-secret=$JWT_SECRET --artifacts-dir=dist --channel=unlisted --amo-metadata=metadata.json
+          web-ext sign --api-key=$JWT_ISSUER --api-secret=$JWT_SECRET --artifacts-dir=dist --channel=listed --amo-metadata=metadata.json
 
       - name: Upload XPI artifact
         uses: actions/upload-artifact@v4

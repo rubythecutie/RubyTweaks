@@ -1,10 +1,13 @@
 {
-  "version": "0.0.3",
-  "license": "GPL-3.0",
+  "version": {
+    "license": "GPL-3.0-only"
+  },
   "summary": {
     "en-US": "A cute extension to tweak various websites :3"
   },
-  "categories": { "firefox": ["appearance"] },
+  "categories": {
+    "firefox": ["appearance"]
+  },
   "requires_payment": false,
   "homepage": {
     "en-US": "https://github.com/rubythecutie/RubyTweaks"
