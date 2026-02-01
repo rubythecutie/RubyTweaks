@@ -1,0 +1,11 @@
+{
+  "name": "Bing",
+  "tweaks": [
+    {
+      "id": "remove-copilot",
+      "title": "Remove Copilot",
+      "description": "Removes Copilot and AI overviews",
+      "css": "sites/bing/remove-copilot.css"
+    }
+  ]
+}

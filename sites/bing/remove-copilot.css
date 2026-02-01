@@ -1,0 +1,39 @@
+/* SEARCH RESULTS PAGE */
+/* Copilot Search tab */
+li#b-scopeListItem-copilotsearch,
+/* Copilot tab */ 
+li#b-scopeListItem-conv,
+
+/* Copilot search logo */
+div.ca_top_sec,
+
+/* Suggested follow-ups to top result */
+div.copans_bottom_sec,
+
+/* Copilot search at bottom of page */
+div#b_copilot_search_container,
+
+/* AI overview */
+div.qna-mf, li.b_qnacdxcont,
+
+/* Copilot promotion */
+div.b_poleContent:has(div#uaanswer),
+ol:has(li.b_adTop),
+
+/* HOME PAGE */
+/* Copilot tab */
+li#codex,
+
+/* Copilot button beside search bar */
+a.cdxConv_slsboxl,
+
+/* AI tools list */
+div.aitools {
+  display: none;
+}
+
+/* SEARCH RESULTS PAGE */
+/* Clean extra padding after overview */
+li.b_qnacdxcont + li.b_algo {
+  padding-top: 0px;
+}

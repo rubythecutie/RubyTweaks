@@ -26,5 +26,10 @@
     "domain": "gemini.google.com",
     "meta": "sites/gemini/meta.json",
     "badgeColor": "#4796E3"
+  },
+  "bing": {
+    "domain": "bing.com",
+    "meta": "sites/bing/meta.json",
+    "badgeColor": "#235FAF"
   }
 }
