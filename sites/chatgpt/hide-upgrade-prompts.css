@@ -8,7 +8,7 @@ button.__menu-item-trailing-btn.-ms-2.cursor-default.ps-2,
 div.bg-token-border-default + div:not([data-has-submenu]),
 
 /* Upgrade in model list */
-div[role="menu"][data-state="open"]:not(:has(div.flex-col)):not(:has(div.relative)) div.group.__menu-item:first-of-type,
+div[role="menu"][data-state="open"]:not(:has(div.flex-col)):not(:has(div.relative)) div:not([role="group"]) div.group.__menu-item:first-of-type,
 
 /* Upgrade button above user icon */
 div.pointer-events-none.flex-grow + div,
