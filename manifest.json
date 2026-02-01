@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "RubyTweaks",
   "author": "rubythecutie",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Ruby's cute tweaks to make things better :3",
   "icons": {
     "48": "icons/icon.png"
@@ -11,10 +11,7 @@
     "tabs", "storage", "activeTab", "scripting"
   ],
   "host_permissions": [
-    "*://*.discord.com/*",
-    "*://*.flightradar24.com/*",
-    "*://*.spotify.com/*",
-    "*://*.chatgpt.com/*"
+    "<all_urls>"
   ],
   "background": {
     "scripts": ["background.js"]

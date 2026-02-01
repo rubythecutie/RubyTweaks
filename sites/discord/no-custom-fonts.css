@@ -2,7 +2,13 @@
 span.username__0a06e div span,
 
 /* DMs list */
-div.username__972a0 div div span {
+div.username__972a0 div div span,
+
+/* Sidebar names in members list */
+span.name__703b9,
+
+/* Message sender */
+span.username_c19a55 {
   font-family: gg sans,Arial,sans-serif;
   letter-spacing: normal
 }
