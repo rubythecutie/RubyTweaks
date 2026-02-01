@@ -31,5 +31,10 @@
     "domain": "bing.com",
     "meta": "sites/bing/meta.json",
     "badgeColor": "#235FAF"
+  },
+  "google": {
+    "domain": "www.google.com",
+    "meta": "sites/google/meta.json",
+    "badgeColor": "#4285F4"
   }
 }

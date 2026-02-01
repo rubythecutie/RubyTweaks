@@ -1,0 +1,11 @@
+{
+  "name": "Google",
+  "tweaks": [
+    {
+      "id": "hide-ai-overview",
+      "title": "Hide AI Overview",
+      "description": "Hides the AI overview from search results",
+      "css": "sites/google/hide-ai-overview.css"
+    }
+  ]
+}
