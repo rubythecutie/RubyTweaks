@@ -6,6 +6,12 @@
       "title": "Hide AI Overview",
       "description": "Hides the AI overview from search results",
       "css": "sites/google/hide-ai-overview.css"
+    },
+    {
+      "id": "hide-bot-suggestions",
+      "title": "Hide Bot Suggestions",
+      "description": "Hides 'People also...' bot suggestions",
+      "css": "sites/google/hide-bot-suggestions.css"
     }
   ]
 }

@@ -1,0 +1,7 @@
+/* "People also ask" */
+div[data-initq],
+
+/* "People also search for" */
+div#botstuff div div#bres{
+  display: none;
+}
