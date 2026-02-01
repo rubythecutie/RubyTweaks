@@ -1,0 +1,11 @@
+{
+  "name": "YouTube Music",
+  "tweaks": [
+    {
+      "id": "no-premium-ads",
+      "title": "No Premium Ads",
+      "description": "Removes advertising for YouTube Music Premium",
+      "css": "sites/ytmusic/no-premium-ads.css"
+    }
+  ]
+}

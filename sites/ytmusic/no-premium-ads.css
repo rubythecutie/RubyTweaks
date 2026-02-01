@@ -1,0 +1,10 @@
+/* Popup in bottom left corner */
+tp-yt-paper-dialog:has(ytmusic-mealbar-promo-renderer),
+
+/* Upgrade button in sidebar */
+ytmusic-guide-entry-renderer:nth-of-type(4),
+
+/* Upgrade button in profile menu */
+ytd-compact-link-renderer:has(a[href="/music_premium"]) {
+  display: none;
+}

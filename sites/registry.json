@@ -16,5 +16,10 @@
   "chatgpt": {
     "domain": "chatgpt.com",
     "meta": "sites/chatgpt/meta.json"
+  },
+  "ytmusic": {
+    "domain": "music.youtube.com",
+    "meta": "sites/ytmusic/meta.json",
+    "badgeColor": "#C3352E"
   }
 }
