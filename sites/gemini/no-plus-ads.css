@@ -1,0 +1,11 @@
+/* "Upgrade to Google AI Plus" button */
+upsell-button,
+a[data-test-id="mobile-upgrade-tier-helium-button"], /* In Mobile Menu */
+
+/* "View subscriptions" in Settings & Help */
+a[data-test-id$="view-subscriptions-button"],
+
+/* Upgrade prompt in models menu */
+div.upgrade-container.helium-upsell-container {
+  display: none;
+}

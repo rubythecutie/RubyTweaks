@@ -1,0 +1,11 @@
+{
+  "name": "Google Gemini",
+  "tweaks": [
+    {
+      "id": "no-plus-ads",
+      "title": "No Plus Ads",
+      "description": "Removes advertising for Google AI Plus",
+      "css": "sites/gemini/no-plus-ads.css"
+    }
+  ]
+}

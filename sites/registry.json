@@ -21,5 +21,10 @@
     "domain": "music.youtube.com",
     "meta": "sites/ytmusic/meta.json",
     "badgeColor": "#C3352E"
+  },
+  "gemini": {
+    "domain": "gemini.google.com",
+    "meta": "sites/gemini/meta.json",
+    "badgeColor": "#4796E3"
   }
 }
