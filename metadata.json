@@ -6,7 +6,7 @@
     "en-US": "A cute extension to tweak various websites :3"
   },
   "categories": {
-    "firefox": ["appearance"]
+    "firefox": ["other"]
   },
   "requires_payment": false,
   "homepage": {

@@ -1,0 +1,11 @@
+{
+  "name": "Reddit",
+  "tweaks": [
+    {
+      "id": "hide-subreddits",
+      "title": "Hide Subreddits",
+      "description": "Adds an interface to allow hiding posts from particular subreddits",
+      "js": "sites/reddit/hide-subreddits.js"
+    }
+  ]
+}

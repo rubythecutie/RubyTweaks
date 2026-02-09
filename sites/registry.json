@@ -36,5 +36,10 @@
     "domain": "www.google.com",
     "meta": "sites/google/meta.json",
     "badgeColor": "#4285F4"
+  },
+  "reddit": {
+    "domain": "reddit.com",
+    "meta": "sites/reddit/meta.json",
+    "badgeColor": "#FF4500"
   }
 }
