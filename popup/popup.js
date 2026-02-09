@@ -21,7 +21,7 @@
   }
 
   if (!tabUrl || !tabUrl.startsWith("http")) {
-    noTweaks.textContent = "No tweaks available on this page.";
+    noTweaks.textContent = "No tweaks available for this page 😞";
     return;
   }
 
