@@ -8,7 +8,13 @@ div.username__972a0 div div span,
 span.name__703b9,
 
 /* Message sender */
-span.username_c19a55 {
+span.username_c19a55,
+
+/* Username in profile popup */
+div.clickableUsername__63ed3 *,
+
+/* Username in profile */
+div.usernameRow__63ed3 * {
   font-family: gg sans,Arial,sans-serif;
   letter-spacing: normal
 }
