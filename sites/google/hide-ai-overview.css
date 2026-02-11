@@ -5,3 +5,8 @@ div.bzXtMb.M8OgIe.dRpWwb,
 div.MjjYud:has(div#eKIzJc) {
   display: none;
 }
+
+/* Clean up extra padding after AI overview */
+div#search div.ULSxyf {
+  margin-bottom: 0px;
+}
