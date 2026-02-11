@@ -2,6 +2,7 @@
 div[data-initq],
 
 /* "People also search for" */
-div#botstuff div div#bres{
+div#botstuff div div#bres,
+div.MjjYud:has(div[data-ved][data-hveid]):has(srpx-bugfix) /* Mobile */ {
   display: none;
 }
