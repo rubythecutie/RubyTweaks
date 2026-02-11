@@ -1,3 +1,7 @@
-div.bzXtMb.M8OgIe.dRpWwb {
+/* Desktop */
+div.bzXtMb.M8OgIe.dRpWwb,
+
+/* Mobile */
+div.MjjYud:has(div#eKIzJc) {
   display: none;
 }
