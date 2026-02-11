@@ -8,12 +8,18 @@ button.__menu-item-trailing-btn.-ms-2.cursor-default.ps-2,
 div.bg-token-border-default + div:not([data-has-submenu]),
 
 /* Upgrade in model list */
-div[role="menu"][data-state="open"]:not(:has(div.flex-col)):not(:has(div.relative)) div:not([role="group"]) div.group.__menu-item:first-of-type,
+div[data-radix-popper-content-wrapper]:not([class^="z-50"]) > div:not(:has(div.bg-token-border-default)) > div.group.__menu-item:first-of-type,
 
 /* Upgrade button above user icon */
 div.pointer-events-none.flex-grow + div,
 
 /* "Get Plus" in header */
-header div.start-0 div div {
-  display: none;
+header div.start-0 div div,
+
+/* Claim free offer in sidebar */
+div.sticky.bottom-0.z-30.bg-token-bg-elevated-secondary > div.relative > div.m-4.mt-2,
+
+/* Mobile "Free offer" in header */
+header#page-header > div.pointer-events-none.flex:first-of-type + div > button + div > div:has(button) {
+ display: none;
 }
