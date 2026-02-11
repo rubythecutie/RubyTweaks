@@ -3,18 +3,23 @@ span.username__0a06e div span,
 
 /* DMs list */
 div.username__972a0 div div span,
+div.name__20a53 div div span,
 
 /* Sidebar names in members list */
 span.name__703b9,
 
 /* Message sender */
 span.username_c19a55,
+span[id^="message-username-"] *,
 
 /* Username in profile popup */
 div.clickableUsername__63ed3 *,
 
 /* Username in profile */
-div.usernameRow__63ed3 * {
-  font-family: gg sans,Arial,sans-serif;
-  letter-spacing: normal
+div.usernameRow__63ed3 *,
+
+/* DMs title */
+div.titleWrapper__9293f * {
+ font-family: gg sans,Arial,sans-serif;
+ letter-spacing: normal
 }
