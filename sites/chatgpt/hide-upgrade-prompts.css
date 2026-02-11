@@ -1,6 +1,9 @@
 /* "You've hit the free plan limit" */
 div.flex.w-full.shrink-0.flex-col button,
 
+/* "Try Plus free" in "You need GPT-5..." box */
+aside.flex.w-full button.btn.relative.btn-secondary.shrink-0,
+
 /* Upgrade beside profile */
 button.__menu-item-trailing-btn.-ms-2.cursor-default.ps-2,
 
