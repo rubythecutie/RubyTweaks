@@ -1,3 +1,7 @@
+if (navigator.userAgent.indexOf("Chrome") != -1) {
+  browser = chrome;
+}
+
 async function loadJSON(path) {
   const url = browser.runtime.getURL(path);
   const res = await fetch(url);
@@ -130,51 +134,61 @@ browser.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   }
 });
 
-browser.runtime.onMessage.addListener(async (msg, sender) => {
-  if (msg?.action === "setEnabled") {
-    const { siteKey, tweakId, enabled } = msg;
-    const map = await getEnabledMap();
-    map[siteKey] = map[siteKey] || {};
-    map[siteKey][tweakId] = enabled;
-    await setEnabledMap(map);
+browser.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+  const handleMessage = async () => {
+    if (msg?.action === "setEnabled") {
+      const { siteKey, tweakId, enabled } = msg;
+      const map = await getEnabledMap();
+      map[siteKey] = map[siteKey] || {};
+      map[siteKey][tweakId] = enabled;
+      await setEnabledMap(map);
 
-    const registry = await loadJSON("sites/registry.json");
-    const site = registry[siteKey];
-    if (!site) return { ok: true };
+      const registry = await loadJSON("sites/registry.json");
+      const site = registry[siteKey];
+      if (!site) return { ok: true };
 
-    const tabs = await browser.tabs.query({});
-    for (const t of tabs) {
-      if (!t.url || !t.url.startsWith("http")) continue;
-      if (new URL(t.url).hostname.endsWith(site.domain)) {
-        await applyTweaksToTab(t.id, t.url);
+      const tabs = await browser.tabs.query({});
+      for (const t of tabs) {
+        if (!t.url || !t.url.startsWith("http")) continue;
+        if (new URL(t.url).hostname.endsWith(site.domain)) {
+          await applyTweaksToTab(t.id, t.url);
+        }
       }
+
+      const meta = await loadJSON(site.meta);
+      const tweak = meta.tweaks.find(x => x.id === tweakId);
+      const needReload = Boolean(tweak && tweak.js);
+      return { needReload };
     }
 
-    const meta = await loadJSON(site.meta);
-    const tweak = meta.tweaks.find(x => x.id === tweakId);
-    const needReload = Boolean(tweak && tweak.js);
-    return { needReload };
-  }
-
-  if (msg?.action === "reloadTab") {
-    if (typeof msg.tabId === "number") {
-      await browser.tabs.reload(msg.tabId);
-      return { reloaded: true };
+    if (msg?.action === "reloadTab") {
+      if (typeof msg.tabId === "number") {
+        await browser.tabs.reload(msg.tabId);
+        return { reloaded: true };
+      }
+      return { reloaded: false };
     }
-    return { reloaded: false };
-  }
 
-  if (msg?.action === "getState") {
-    const registry = await loadJSON("sites/registry.json");
-    const enabled = await getEnabledMap();
-    const tabs = await browser.tabs.query({ active: true, currentWindow: true });
-    const tab = tabs[0] || null;
+    if (msg?.action === "getState") {
+      const registry = await loadJSON("sites/registry.json");
+      const enabled = await getEnabledMap();
+      const tabs = await browser.tabs.query({ active: true, currentWindow: true });
+      const tab = tabs[0] || null;
 
-    return {
-      registry,
-      enabled,
-      tabUrl: tab ? tab.url : null,
-      tabId: tab ? tab.id : null
-    };
-  }
+      return {
+        registry,
+        enabled,
+        tabUrl: tab ? tab.url : null,
+        tabId: tab ? tab.id : null
+      };
+    }
+  };
+
+  handleMessage().then((response) => {
+    if (response !== undefined) {
+      sendResponse(response);
+    }
+  });
+
+  return true;
 });

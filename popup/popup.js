@@ -1,3 +1,7 @@
+if (navigator.userAgent.indexOf("Chrome") != -1) {
+  browser = chrome;
+}
+
 (async function(){
   const $ = sel => document.querySelector(sel);
   const tweaksList = $("#tweaks");
