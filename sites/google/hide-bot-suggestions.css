@@ -1,8 +1,18 @@
 /* "People also ask" */
 div[data-initq],
+div.A6K0A:has(div[jsname="bq0EGf"]),
+div.uzfIAc, /* Gap */
 
 /* "People also search for" */
 div#botstuff div div#bres,
-div.MjjYud:has(div[data-ved][data-hveid]):has(srpx-bugfix) /* Mobile */ {
+div#kp-wp-tab-overview > div:not([class*="tQtKhb"]), /* Mobile */
+div.MjjYud > div.AuVD.wHYlTd.Ww4FFb.vt6azd, /* Mobile */
+
+/* "People also ask for" on special/trending searches + top area info */
+div.A6K0A:has(div.xfX4Ac:not([class*="tQtKhb"])[jsdata^="PhoHd"]),
+div[data-st-tgt="osrp_st_tabs"], div[data-st-tgt="uib"],
+
+/* "Find related products and services" */
+div.MjjYud > div > div#HbKV2c {
   display: none;
 }
