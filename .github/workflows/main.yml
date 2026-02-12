@@ -1,11 +1,11 @@
-name: Build XPI
+name: Build Extensions
 
 on:
   workflow_dispatch:
 
 jobs:
-  build:
-    name: Build XPI
+  build-xpi:
+    name: Build XPI (Firefox)
     runs-on: ubuntu-latest
 
     steps:
@@ -32,3 +32,33 @@ jobs:
         with:
           name: RubyTweaks-XPI
           path: dist/*
+  
+  build-crx:
+    name: Build CRX (Chrome)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Chrome
+        run: |
+          sudo apt update
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt install ./google-chrome*.deb
+          rm -r ./google-chrome*.deb
+
+      - name: Build CRX
+        env:
+          PEMFILE: ${{ secrets.RUBYTWEAKS_PEM }}
+        run: |
+          cd ..
+          echo "$PEMFILE" > RubyTweaks.pem
+          google-chrome-stable --pack-extension="RubyTweaks" --pack-extension-key="./RubyTweaks.pem"
+          mv *.crx RubyTweaks
+
+      - name: Upload CRX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RubyTweaks-CRX
+          path: ./*.crx
