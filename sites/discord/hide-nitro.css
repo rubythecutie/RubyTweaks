@@ -15,11 +15,12 @@ div.selectionGroup__6b52d,
 div.container_a1d343,
 
 /* Nitro button in DMs list */
+div[aria-setsize="20"][aria-posinset="2"]
 div[aria-setsize="49"][aria-posinset="2"],
 div[aria-setsize="50"][aria-posinset="2"],
 
 /* Gift Nitro in DMs */
-div.button__74017.button__24af7,
+div[class^="buttons__"] > div[class^="container"]:has(div[aria-label="Send a gift"]),
 
 /* Nitro badge in profiles */
 a[href="https://discord.com/settings/premium"] {
