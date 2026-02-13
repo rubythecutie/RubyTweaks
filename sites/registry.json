@@ -46,5 +46,10 @@
     "domain": "outlook.live.com",
     "meta": "sites/outlook/meta.json",
     "badgeColor": "#127CD6"
+  },
+  "m365": {
+    "domain": "m365.cloud.microsoft",
+    "meta": "sites/m365/meta.json",
+    "badgeColor": "#199fd7"
   }
 }

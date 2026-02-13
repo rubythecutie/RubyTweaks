@@ -1,0 +1,14 @@
+/* Copilot chat */
+button#chat,
+button#chat + div.___12uu7fi,
+
+/* Notebooks*/
+div.___1vgvawp > div:has(button#Notebooks),
+
+/* Microsoft Defender Diamond */
+a[href^="https://mydefender.microsoft.com/"],
+
+/* "Buy Microsoft 365" button */
+div.___17bnmwu {
+  display: none !important;
+}

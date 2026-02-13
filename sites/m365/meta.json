@@ -1,0 +1,11 @@
+{
+  "name": "M365 Copilot",
+  "tweaks": [
+    {
+      "id": "hide-paid-features",
+      "title": "Hide Paid Features",
+      "description": "Hides features only available on paid plans.",
+      "css": "sites/m365/hide-paid-features.css"
+    }
+  ]
+}
