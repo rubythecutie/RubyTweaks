@@ -41,5 +41,10 @@
     "domain": "reddit.com",
     "meta": "sites/reddit/meta.json",
     "badgeColor": "#FF4500"
+  },
+  "outlook": {
+    "domain": "outlook.live.com",
+    "meta": "sites/outlook/meta.json",
+    "badgeColor": "#127CD6"
   }
 }

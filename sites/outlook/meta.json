@@ -1,0 +1,11 @@
+{
+  "name": "Outlook",
+  "tweaks": [
+    {
+      "id": "hide-ad-placeholder",
+      "title": "Hide Ad Placeholder",
+      "description": "Hides the ad placeholder when the user has an ad blocker.",
+      "css": "sites/outlook/hide-ad-placeholder.css"
+    }
+  ]
+}
