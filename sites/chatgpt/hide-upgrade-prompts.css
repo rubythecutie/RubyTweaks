@@ -21,8 +21,10 @@ header div.start-0 div div,
 
 /* Claim free offer in sidebar */
 div.sticky.bottom-0.z-30.bg-token-bg-elevated-secondary > div.relative > div.m-4.mt-2,
+div.mt-1.mb-2:has(button.btn.border-token-interactive-border-secondary-default.font-medium),
 
 /* Mobile "Free offer" in header */
-header#page-header > div.pointer-events-none.flex:first-of-type + div > button + div > div:has(button) {
+header#page-header > div.pointer-events-none.flex:first-of-type + div > button + div > div:has(button),
+header#page-header > div.pointer-events-none\! > div > div[class*="bg-"]:has(button) {
  display: none;
 }
