@@ -13,14 +13,15 @@ div.upsellContainer__0b69f.upsellContainerFloating__0b69f.floatingNitroUpsell__3
 div.colorThemesBackground_fbfab6,
 div.selectionGroup__6b52d,
 div.container_a1d343,
+div.container__75920[data-nav-anchor-key="display_client_themes"],
+div.container__75920[data-nav-anchor-key="display_in_app_icon_category"],
+div.container__75920[data-nav-anchor-key="display_in_app_icon_category"] + div.divider__1de9c,
 
 /* Nitro button in DMs list */
-div[aria-setsize="20"][aria-posinset="2"]
-div[aria-setsize="49"][aria-posinset="2"],
-div[aria-setsize="50"][aria-posinset="2"],
+nav.privateChannels_e6b769 div[aria-setsize][aria-posinset="2"],
 
 /* Gift Nitro in DMs */
-div[class^="buttons__"] > div[class^="container"]:has(div[aria-label="Send a gift"]),
+div[class^="buttons__"] > div.button__74017:first-of-type,
 
 /* Nitro badge in profiles */
 a[href="https://discord.com/settings/premium"] {
