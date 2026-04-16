@@ -7,6 +7,11 @@ div.MjjYud:has(div#eKIzJc) {
 }
 
 /* Clean up extra padding after AI overview */
+div#slim_appbar {
+  display: none;
+}
+
+/* Remove extra padding after first search result */
 div#search div.ULSxyf {
   margin-bottom: 0px;
 }
