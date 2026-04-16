@@ -106,7 +106,8 @@ function openModal() {
   modalEl.style.background = 'rgba(0,0,0,0.45)';
 
   const modalCard = document.createElement('rpl-modal-card');
-  modalCard.className = 'box-border h-[480px] w-[584px] max-w-full';
+  modalCard.className = 'box-border w-[584px] max-w-full';
+  modalCard.style.height = "480px";
   modalCard.setAttribute('appearance', 'modal');
 
   const titleSlot = document.createElement('div');
