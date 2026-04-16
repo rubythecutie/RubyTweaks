@@ -80,7 +80,7 @@ if (navigator.userAgent.indexOf("Chrome") != -1) {
     const slider = document.createElement("span");
     slider.className = "slider";
 
-    const current = enabledMap[siteKey].hasOwnProperty(tweak.id) ? enabledMap[siteKey][tweak.id] : true;
+    const current = enabledMap[siteKey].hasOwnProperty(tweak.id) ? enabledMap[siteKey][tweak.id] : false;
     input.checked = Boolean(current);
 
     switchWrap.appendChild(input);

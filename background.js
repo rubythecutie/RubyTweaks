@@ -46,7 +46,7 @@ async function updateBadge(tabId, url) {
     const perSite = enabledMap[siteKey] || {};
     let count = 0;
     for (const tweak of meta.tweaks) {
-      const enabled = perSite.hasOwnProperty(tweak.id) ? perSite[tweak.id] : true;
+      const enabled = perSite.hasOwnProperty(tweak.id) ? perSite[tweak.id] : false;
       if (enabled) count++;
     }
 
@@ -99,7 +99,7 @@ async function applyTweaksToTab(tabId, url) {
   const perSite = enabledMap[siteKey] || {};
 
   for (const tweak of meta.tweaks) {
-    const enabled = perSite.hasOwnProperty(tweak.id) ? perSite[tweak.id] : true;
+    const enabled = perSite.hasOwnProperty(tweak.id) ? perSite[tweak.id] : false;
     const cssPath = tweak.css || null;
     const jsPath = tweak.js || null;
 
