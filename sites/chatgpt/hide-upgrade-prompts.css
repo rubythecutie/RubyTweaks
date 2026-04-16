@@ -14,7 +14,7 @@ div.bg-token-border-default + div:not([data-has-submenu]),
 div[data-radix-popper-content-wrapper]:not([class^="z-50"]) > div:not(:has(div.bg-token-border-default)) > div.group.__menu-item:first-of-type,
 
 /* Upgrade button above user icon */
-div.pointer-events-none.flex-grow + div,
+div.pointer-events-none.flex-grow + div:not(.mb-1),
 
 /* "Get Plus" in header */
 header div.start-0 div div,
