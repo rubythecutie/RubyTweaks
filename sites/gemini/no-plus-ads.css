@@ -1,11 +1,16 @@
 /* "Upgrade to Google AI Plus" button */
-upsell-button,
-a[data-test-id="mobile-upgrade-tier-helium-button"], /* In Mobile Menu */
+div.buttons-container.adv-upsell,
+a[data-test-id^="mobile-upgrade-tier"], /* In Mobile Menu */
+div.mobile-controls > *[data-test-id*="upsell"], /* In Mobile Sidebar */
+
 
 /* "View subscriptions" in Settings & Help */
 a[data-test-id$="view-subscriptions-button"],
 
 /* Upgrade prompt in models menu */
-div.upgrade-container.helium-upsell-container {
+div.upgrade-container:has(div.upgrade-text-container),
+
+/* Upgrade button in Thinking limit reached prompt */
+div.human-review-disclosure-container div.promo button {
   display: none;
 }
