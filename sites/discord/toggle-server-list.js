@@ -15,10 +15,6 @@ function waitForServerList() {
     buttonContainer.dataset.collapsed = 'false';
 
     buttonContainer.innerHTML = `
-        <div class="pill__5bc7e">
-            <div class="wrapper__58105" aria-hidden="true"></div>
-        </div>
-
         <span>
             <div class="listItemWrapper__91816">
                 <div class="wrapper_cc5dd2" style="width: 40px; height: 40px">
