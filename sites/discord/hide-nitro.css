@@ -1,5 +1,5 @@
 /* Top banners */
-div.notice__29487.theme-dark.theme-darker.images-dark,
+div.notice__29487,
 
 /* "So many hours left" badges */
 div.premiumBadge__6d7da.premiumAcknowledgedBadge__6d7da,
@@ -10,12 +10,13 @@ div[class^="newBadge__"],
 
 /* Appearance Nitro Advertising */
 div.upsellContainer__0b69f.upsellContainerFloating__0b69f.floatingNitroUpsell__39749,
-div.colorThemesBackground_fbfab6,
+div.colorThemesBackground__965a6,
 div.selectionGroup__6b52d,
 div.container_a1d343,
-div.container__75920[data-nav-anchor-key="display_client_themes"],
-div.container__75920[data-nav-anchor-key="display_in_app_icon_category"],
-div.container__75920[data-nav-anchor-key="display_in_app_icon_category"] + div.divider__1de9c,
+div.container__75920[data-nav-anchor-key="appearance_client_themes"],
+div.container__75920[data-nav-anchor-key="appearance_custom_themes_upsell"],
+div.container__75920[data-nav-anchor-key="appearance_in_app_icon_category"],
+div.container__75920[data-nav-anchor-key="appearance_in_app_icon_category"] + div.divider__1de9c,
 
 /* Nitro button in DMs list */
 nav.privateChannels_e6b769 div[aria-setsize][aria-posinset="2"],
@@ -24,6 +25,13 @@ nav.privateChannels_e6b769 div[aria-setsize][aria-posinset="2"],
 div[class^="buttons__"] > div.button__74017:first-of-type,
 
 /* Nitro badge in profiles */
-a[href="https://discord.com/settings/premium"] {
+a[href="https://discord.com/settings/premium"],
+
+/* "Nitro Rewards" in Connections tab */
+div[data-nav-anchor-key="connections_connected_accounts_setting"] > div > div.sectionHeader__53455,
+div[data-nav-anchor-key="connections_connected_accounts_setting"] > div > div.sectionHeader__53455 + div[class*="theme-"],
+
+/* "Get 2 Boosts with Nitro!: */
+div.banner_dd6b5e {
  display: none;
 }
