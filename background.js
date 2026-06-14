@@ -50,7 +50,7 @@ async function updateBadge(tabId, url) {
       if (enabled) count++;
     }
 
-    await browser.action.setBadgeText({ tabId, text: count ? String(count) : "" });
+    await browser.action.setBadgeText({ tabId, text: count ? String(count) : "0" });
     await browser.action.setBadgeBackgroundColor({ tabId, color: site.badgeColor || "#444" });
   } catch (e) {
     console.error("updateBadge error", e);
