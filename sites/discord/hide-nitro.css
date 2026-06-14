@@ -23,6 +23,7 @@ nav.privateChannels_e6b769 div[aria-setsize][aria-posinset="2"],
 
 /* Gift Nitro in DMs */
 div[class^="buttons__"] > div.button__74017:first-of-type,
+div[class^="buttons__"] > div.container_c0c49a > div.button__74017:first-of-type,
 
 /* Nitro badge in profiles */
 a[href="https://discord.com/settings/premium"],
