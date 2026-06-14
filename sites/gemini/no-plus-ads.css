@@ -1,8 +1,10 @@
 /* "Upgrade to Google AI Plus" button */
 div.buttons-container.adv-upsell,
 a[data-test-id^="mobile-upgrade-tier"], /* In Mobile Menu */
-div.mobile-controls > *[data-test-id*="upsell"], /* In Mobile Sidebar */
 
+/* In Mobile Sidebar */
+div.mobile-controls > *[data-test-id*="upsell"],
+.mobile-controls-list:has(g1-dynamic-upsell-button),
 
 /* "View subscriptions" in Settings & Help */
 a[data-test-id$="view-subscriptions-button"],
