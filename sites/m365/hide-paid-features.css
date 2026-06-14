@@ -1,14 +1,17 @@
 /* Copilot chat */
 button#chat,
 button#chat + div.___12uu7fi,
+button[aria-label="New chat"],
 
 /* Notebooks*/
 div.___1vgvawp > div:has(button#Notebooks),
 
 /* Microsoft Defender Diamond */
 a[href^="https://mydefender.microsoft.com/"],
+div.fui-Card[data-testid="more-m365-apps-Defender"],
 
 /* "Buy Microsoft 365" button */
-div.___17bnmwu {
+div.___17bnmwu,
+footer.fui-NavDrawerFooter > div.___wtlqzf0 > div:last-of-type {
   display: none !important;
 }
