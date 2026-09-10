@@ -12,6 +12,12 @@ div.fui-Card[data-testid="more-m365-apps-Defender"],
 
 /* "Buy Microsoft 365" button */
 div.___17bnmwu,
-footer.fui-NavDrawerFooter > div.___wtlqzf0 > div:last-of-type {
+footer.fui-NavDrawerFooter > div.___wtlqzf0 > div:last-of-type,
+
+/* "Upgrade" button in sidebar */
+div[data-testid="nav-footer-upsell"],
+
+/* "Upgrade your Copilot" promotion */
+div.fui-MenuList > div[role="presentation"] {
   display: none !important;
 }
