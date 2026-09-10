@@ -13,6 +13,9 @@ div.bg-token-border-default + div:not([data-has-submenu]),
 /* Upgrade in model list */
 div[data-radix-popper-content-wrapper]:not([class^="z-50"]) > div:not(:has(div.bg-token-border-default)) > div.group.__menu-item:first-of-type,
 
+/* Upgrade in settings' general tab */
+div:has(> div > div[data-testid="settings-general-upgrade-banner"]),
+
 /* "Get Plus" in header */
 header div.start-0 div div,
 
@@ -25,6 +28,7 @@ header#page-header > div.pointer-events-none.flex:first-of-type + div > button +
 header#page-header > div.pointer-events-none\! > div > div[class*="bg-"]:has(button),
 
 /* Desktop "Free offer" in header */
-div[data-testid="thread-header-right-actions-container"] > div > div.hidden {
+div[data-testid="thread-header-right-actions-container"] > div > div.hidden,
+div.inline-flex:has(button.button-glimmer-cta) {
  display: none;
 }
