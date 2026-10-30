@@ -1,5 +1,6 @@
 /* "Upgrade to Google AI Plus" button */
 div.buttons-container.adv-upsell,
+div.mat-mdc-menu-content > a[href*="upsell"],
 a[data-test-id^="mobile-upgrade-tier"], /* In Mobile Menu */
 
 /* In Mobile Sidebar */
@@ -11,6 +12,9 @@ a[data-test-id$="view-subscriptions-button"],
 
 /* Upgrade prompt in models menu */
 div.upgrade-container:has(div.upgrade-text-container),
+
+/* Paid models listed in models menu */
+gem-menu-item[data-mode-id^="upsell_MODE_CATEGORY_"],
 
 /* Upgrade button in Thinking limit reached prompt */
 div.human-review-disclosure-container div.promo button {
