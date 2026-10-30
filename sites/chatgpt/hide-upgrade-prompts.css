@@ -1,5 +1,5 @@
 /* "You've hit the free plan limit" */
-div.flex.w-full.shrink-0.flex-col button,
+div.flex.w-full.shrink-0.flex-col > button,
 
 /* "Try Plus free" in "You need GPT-5..." box */
 aside.flex.w-full button.btn.relative.btn-secondary.shrink-0,
@@ -9,6 +9,7 @@ button.__menu-item-trailing-btn.-ms-2.cursor-default.ps-2,
 
 /* Upgrade in user menu */
 div.bg-token-border-default + div:not([data-has-submenu]),
+div[role="menuitem"]:has(svg > use[href*="codex-icon-sparkles-light-20"]),
 
 /* Upgrade in model list */
 div[data-radix-popper-content-wrapper]:not([class^="z-50"]) > div:not(:has(div.bg-token-border-default)) > div.group.__menu-item:first-of-type,
@@ -22,6 +23,7 @@ header div.start-0 div div,
 /* Claim free offer in sidebar */
 div.sticky.bottom-0.z-30.bg-token-bg-elevated-secondary > div.relative > div.m-4.mt-2,
 div.mt-1.mb-2:has(button.btn.border-token-interactive-border-secondary-default.font-medium),
+div.col-span-full:has(svg > use[href*="codex-icon-gift-regular-16"]),
 
 /* Mobile "Free offer" in header */
 header#page-header > div.pointer-events-none.flex:first-of-type + div > button + div > div:has(button),
@@ -29,6 +31,10 @@ header#page-header > div.pointer-events-none\! > div > div[class*="bg-"]:has(but
 
 /* Desktop "Free offer" in header */
 div[data-testid="thread-header-right-actions-container"] > div > div.hidden,
-div.inline-flex:has(button.button-glimmer-cta) {
+div.inline-flex:has(button.button-glimmer-cta),
+div.pointer-events-auto:has(> div.flex.select-none > button[class*="HeaderOffer"]),
+
+/* "You're using the free version of ChatGPT" message below response */
+div.mt-6:has(div[aria-live="polite"][role="status"]) {
  display: none;
 }
