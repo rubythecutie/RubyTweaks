@@ -17,7 +17,11 @@ footer.fui-NavDrawerFooter > div.___wtlqzf0 > div:last-of-type,
 /* "Upgrade" button in sidebar */
 div[data-testid="nav-footer-upsell"],
 
+/* "Upgrade" button in header */
+div.WHEyR3B5:has(div > button:not(aria-label)),
+
 /* "Upgrade your Copilot" promotion */
-div.fui-MenuList > div[role="presentation"] {
+div.fui-MenuList > div[role="presentation"],
+div.fx-MenuList > div[role="presentation"] {
   display: none !important;
 }
