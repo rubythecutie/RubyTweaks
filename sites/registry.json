@@ -51,5 +51,10 @@
     "domain": "m365.cloud.microsoft",
     "meta": "sites/m365/meta.json",
     "badgeColor": "#199fd7"
+  },
+  "gmail": {
+    "domain": "mail.google.com",
+    "meta": "sites/gmail/meta.json",
+    "badgeColor": "#EA4335"
   }
 }

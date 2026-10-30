@@ -1,0 +1,14 @@
+/* Gemini button in toolbar */
+div.Zmxtcf.e5IPTd:has(button[aria-label*="Gemini"]),
+
+/* "Help me write" in new email */
+div.bAK > div[command="sdt"],
+
+/* AI overview in search */
+div.qFrl2d,
+div[id^="avWBGd-"],
+
+/* "Go to overview" flyout */
+div.bJ51ef {
+  display: none;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Gmail",
+  "tweaks": [
+    {
+      "id": "hide-gemini",
+      "title": "Hide Gemini",
+      "description": "Hides Gemini features in Gmail.",
+      "css": "sites/gmail/hide-gemini.css"
+    }
+  ]
+}
