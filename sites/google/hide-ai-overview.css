@@ -1,5 +1,6 @@
 /* Desktop */
 div.bzXtMb.M8OgIe.dRpWwb,
+div.bzXtMb.M8OgIe[jsname],
 
 /* Mobile */
 div.MjjYud:has(div#eKIzJc) {
@@ -12,6 +13,11 @@ div#slim_appbar {
 }
 
 /* Remove extra padding after first search result */
-div#search div.ULSxyf {
+div#search div.ULSxyf:not(:has(g-section-with-header)) {
   margin-bottom: 0px;
+}
+
+/* AI generated "About this source" summary */
+div[data-hveid="CAEQAA"] > div.k3Incc:first-of-type {
+  display: none;
 }
