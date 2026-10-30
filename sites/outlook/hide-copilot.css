@@ -1,0 +1,7 @@
+/* Copilot button in toolbar */
+div#BottomBar > div[data-app-section="CopilotDabRibbon"],
+
+/* Copilot sidebar */
+div.cBjWe.j7vzC[data-app-section="CopilotChat"] {
+  display: none !important;
+}

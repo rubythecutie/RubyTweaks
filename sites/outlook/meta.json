@@ -6,6 +6,12 @@
       "title": "Hide Ad Placeholder",
       "description": "Hides the ad placeholder when the user has an ad blocker.",
       "css": "sites/outlook/hide-ad-placeholder.css"
+    },
+    {
+      "id": "hide-copilot",
+      "title": "Hide Copilot",
+      "description": "Hides Copilot writing features in Outlook.",
+      "css": "sites/outlook/hide-copilot.css"
     }
   ]
 }
